@@ -1,0 +1,30 @@
+{
+  "name": "playwright-tests-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "npx prettier --write .",
+    "pw": "npx playwright test",
+    "onepw": "npx playwright test tests/hw_21.spec.ts",
+    "docker": "docker run --rm --ipc=host -v \"%cd%:/app\" playwright-tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaryBilaya/playwright-tests-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/MaryBilaya/playwright-tests-ts/issues"
+  },
+  "homepage": "https://github.com/MaryBilaya/playwright-tests-ts#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.2",
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,13 @@
+*.js
+/cache
+compiled/
+node_modules/
+reports
+.vscode
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
