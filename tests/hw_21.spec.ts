@@ -122,7 +122,7 @@ test('Filtering: high to low', async ({ page }) => {
   // expect(priceValues).toEqual(sortDesc);
 });
 
-test('Logout', async ({ page }) => {
+test.only('Logout', async ({ page }) => {
   //Login in to the app
   await login(page);
 
