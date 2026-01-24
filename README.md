@@ -1,11 +1,17 @@
-//команда сбилдить контейнер docker
+//команда сбилдить контейнер docker:
 docker build -t playwright-tests .
 
-//запуск автотестов в docker
+//запуск автотестов в docker:
 docker run --rm --ipc=host -v "$(PWD):/app" playwright-tests
 
-//просмотр репорта playwright
-npx playwright show-report
+//просмотр репорта playwright:
+npx playwright show-report 
 
-//запуск codegen
+//запуск codegen:
 npx playwright codegen https://www.saucedemo.com/
+
+//playwright UI debug:
+npx playwright test --debug
+
+//выбор репортера ('html', 'list', 'dot', 'json', ' junit'):
+npx playwright test --reporter=html

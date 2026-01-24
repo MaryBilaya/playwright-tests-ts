@@ -6,7 +6,7 @@
   "scripts": {
     "format": "npx prettier --write .",
     "pw": "npx playwright test",
-    "onepw": "npx playwright test tests/hw_21.spec.ts",
+    "onepw": "npx playwright test tests/hw_22.spec.ts",
     "docker": "docker run --rm --ipc=host -v \"%cd%:/app\" playwright-tests"
   },
   "repository": {
