@@ -34,7 +34,7 @@ async function login(page: Page) {
 
   await page.locator(loc.usernameField).click();
   await page.locator(loc.usernameField).fill(data.username);
-
+ 
   await page.locator(loc.passwordField).click();
   await page.locator(loc.passwordField).fill(data.password);
 
